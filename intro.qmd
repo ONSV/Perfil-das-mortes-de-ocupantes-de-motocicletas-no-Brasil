@@ -1,0 +1,36 @@
+<style>
+p {
+  text-align: justify;  
+  text-indent: 20px;   
+}
+</style> 
+
+# Introdução 
+
+<p>As motocicletas estão particularmente associadas a uma alta vulnerabilidade em termos de segurança viária (World Health Organization-Global status report on road safety 2023.). No Brasil, as fatalidades envolvendo motocicletas superam todos os outros modos de transporte, representando mais de 44,39% das vítimas fatais no trânsito em 2022. (BRASIL. Ministério da Saúde. DATASUS - Departamento de Informática do SUS. Sistema de Informações sobre Mortalidade (SIM).).   
+
+<p>Este estudo teve como objetivo analisar os fatores associados à ocorrência de vítimas fatais ocupantes de motocicleta no Brasil. O estudo utilizou a base de dados do Sistema de Informações de Mortalidade do Ministério da Saúde para o período de 1996 a 2023. 
+
+# Revisão da literatura  
+
+<p>Estudos anteriores já investigaram fatores de risco para a ocorrência de mortes de motociclistas. Estudo desenvolvido por Granieri et al. (2020) nos Estados Unidos, teve por objetivo avaliar o impacto da idade na mortalidade de motociclistas envolvidos em sinistros. A metodologia empregada no estudo envolveu a análise de dados demográficos. Para a análise dos dados, foi utilizado um modelo de regressão logística para identificar fatores de risco independentes. Os resultados do estudo demonstraram que pacientes mais velhos tiveram um risco 11,72% maior de sofrer traumas severos que motociclistas mais jovens.   
+
+<p>Por outro lado, em pesquisa realizada por Hidalgo-Fuentes e Sospedra-Baeza (2018) na Espanha teve também como objetivo analisar o perfil dos motociclistas acidentados no país conforme a idade e gênero. Para isso, foram coletados dados da Direção Geral de Trânsito de sinistros com vítimas. Os dados foram analisados em termos de gênero, idade, uso de capacete e condições psicológicas do condutor. Os resultados da pesquisa mostram que 74,7% dos motociclistas acidentados tinham menos de 44 anos. 
+
+<p>Hsieh et al. (2017) realizou um estudo na China para determinar o perfil dos motociclistas envolvidos em sinistros de trânsito com base no gênero, comparando a mortalidade entre pacientes femininos e masculinos hospitalizados. O estudo utilizou o Sistema de Registro de Traumas para realizar uma análise retrospectiva de lesões relacionadas a motocicletas. A análise dos dados foi realizada utilizando um método de análise de dados para comparar os padrões de lesões, características de lesões e mortalidade entre os sexos dos pacientes. Os resultados do estudo mostraram que as pacientes do sexo feminino eram mais jovens, apresentavam menor nível de álcool no sangue e usavam capacete com mais frequência que os homens, resultando em taxas de mortalidade mais baixas. 
+
+<p>Estudo realizado por Shabadin et.al. (2015), na Malásia, que teve como objetivo analisar o perfil dos motociclistas envolvidos em sinistros de trânsito conforme o gênero. Foi utilizado o método de aplicação de questionários de autopreenchimento. O questionário foi feito como uma autoavaliação, as questões foram respondidas em uma escala Likert de sete pontos de acordo com o nível de concordância (1 = não concordo a 7 = concordo). Os resultados mostraram que 87% dos 345 que responderam terem se envolvido em um sinistro eram homens. 
+
+<p>Abdolrazagh Barzegar et al. (2020) fez um estudo no Irã que analisou o nível educacional dos motociclistas envolvidos em sinistros de trânsito. O estudo utilizou os registros de mortes de motociclistas da Organização Legal de Medicina do Irã, e com base nesses registros, foi possível estabelecer uma correlação entre os dados e as variáveis escolhidas. O nível educacional baixo foi responsável pela maioria das mortes (77.5%), de acordo com os resultados do estudo. 
+
+<p>Estudo desenvolvido por Almeida et al. (2016) no Brasil, teve por objetivo identificar o perfil de motociclistas envolvidos em sinistros de trânsito conforme o nível educacional. A metodologia empregada no estudo envolveu a aplicação de questionários de autopreenchimento e as variáveis coletadas foram analisadas. Os resultados do estudo demonstram que a ocorrência de sinistros com motocicleta foi associada significativamente com a escolaridade, de 420 motociclistas entrevistados, 186 possuíam baixo nível de escolaridade, dos quais 100 sofreram sinistros de trânsito. 
+
+<p>Estudo desenvolvido por Soares et al. (2015) no Brasil, teve por objetivo avaliar o impacto da renda na mortalidade de motociclistas envolvidos em sinistros. Foi feito um estudo analítico transversal dos dados que empregou uma abordagem quantitativa. Os resultados do estudo demonstraram que 55% dos motociclistas envolvidos em sinistros não tinham uma renda mensal. 
+
+<p>Shaker et.al (2014) fez um estudo no Egito que analisou o estado civil dos motociclistas envolvidos em sinistros de trânsito. O estudo utilizou aplicação de questionários que continham quatro seções principais: dados de informação pessoal, sobre experiência no trânsito, problemas de segurança e informações sobre o sinistro. Com base nesses registros, foi possível concluir que mais da metade dos motociclistas (56,9 %) eram casados. 
+
+<p>Em contrapartida, na pesquisa realizada por Chaves et.al (2015) no Brasil, que teve objetivo de analisar acidentes de trânsito de motocicletas com relação ao status civil. A Pesquisa foi feita com abordagem quantitativa no Hospital Municipal de Imperatriz (Maranhão). Os dados foram analisados estatisticamente, utilizando um banco de dados informatizado. Como resultado, foi obtido que mais da metade dos envolvidos em sinistros eram solteiros (51,79%). 
+
+<p>Estudo desenvolvido por Crompton et.al. (2010), nos Estados Unidos, teve por objetivo avaliar o impacto da raça na mortalidade de motociclistas envolvidos em sinistros. A metodologia empregada no estudo envolveu a análise do Banco Nacional de Dados de Trauma. Para a análise dos dados, foi realizada uma análise transversal retrospectiva de sinistros com motocicleta. Os resultados do estudo demonstraram que pacientes negros tiveram 95% mais chances de morte depois de um sinistro do que pacientes brancos. 
+
+<p>Em outro estudo, realizado por Souza et.al. (2020) no Brasil, que teve o mesmo objetivo do anterior, ou seja, analisar o perfil dos motociclistas envolvidos em acidentes de trânsito conforme a raça. Foram analisadas variáveis sociodemográficas e empregou-se o modelo de regressão por pontos de inflexão. Os resultados mostraram que a maioria das mortes causadas por motocicletas foram da raça parda (78.12%). 

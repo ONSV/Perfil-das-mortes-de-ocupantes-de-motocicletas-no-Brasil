@@ -1,0 +1,20 @@
+<style>
+p {
+  text-align: justify;  
+  text-indent: 20px;   
+}
+</style> 
+
+# Metodologia  
+
+<p>A metodologia da análise foi conduzida utilizando o software R e as bibliotecas necessárias para o carregamento e manipulação dos dados, modelagem estatística e visualização dos resultados. Foram utilizadas as seguintes bibliotecas: dplyr, psych, car, MASS, DescTools, QuantPsyc, ggplot2, onsvplot e roadtrafficdeaths(base de dados de mortalidade no trânsito do Ministério da Saúde).
+
+<p>Inicialmente foram selecionadas variáveis a serem analisadas (contidas na biblioteca roadtrafficdeaths), levando em consideração o objetivo do estudo de identificar o perfil das vítimas fatais ocupantes de motocicletas no Brasil e a disponibilidade de dados de cada variável. As variáveis consideradas foram: 
+
+  - modal_vitima (modo de transporte da vítima); 
+  -faixa_etaria_vitima (faixa etária da vítima); 
+  -sexo_vitima (sexo da vítima); 
+  -escolaridade_vitima (nível de escolaridade da vítima); 
+  -raca_vitima (cor ou raça da vítima); 
+  -nome_regiao_res (região de residência da vítima); 
+  -estado_civil_vitima (estado civil da vítima); 

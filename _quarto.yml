@@ -1,0 +1,34 @@
+project:
+  type: book
+  output-dir: docs
+
+execute:
+  freeze: auto
+
+language:
+  section-title-appendices: "Apêndices"
+
+book:
+  title: "MUDAR" ####################################################################################
+  author:
+  - name: Arthur Hideio Noguti
+  - name: Dr. Jorge Tiago Bastos
+    orcid: 0000-0001-6447-1504
+  date: last-modified
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - metodologia.qmd
+  twitter-card: true
+  repo-url: https://github.com/ONSV/MUDAR #######################################################
+  language: pt
+
+csl: associacao-brasileira-de-normas-tecnicas.csl
+
+format:
+  html:
+    theme: [cosmo, custom.scss]
+    lang: pt
+    fig-cap-location: top
+    linkcolor: "#00496d"
+    

@@ -1,0 +1,48 @@
+<style>
+p {
+  text-align: justify;  
+  text-indent: 20px;   
+}
+</style>  
+
+# Resumo {-}  
+
+***  
+
+<p>No Brasil, as fatalidades de motociclistas superam todos os outros modos de transporte, representando mais de 44,39% das vítimas fatais no trânsito em 2022. O objetivo deste estudo foi analisar os fatores associados à ocorrência de vítimas fatais ocupantes de motocicleta no Brasil. A pesquisa utilizou a base de dados do Sistema de Informações de Mortalidade (SIM) do Ministério da Saúde, cobrindo o período de 1996 a 2023. Foram selecionadas variáveis como faixa etária, sexo, escolaridade, raça, região de residência e estado civil da vítima. A modelagem estatística consistiu na aplicação de um modelo de regressão logística binária, utilizando o software R, com o objetivo de identificar os fatores de risco estatisticamente significativos para óbitos de ocupantes de motocicletas.   
+
+# Highlights {-}  
+
+***  
+
+
+
+# Sobre o Observatório {-}   
+
+***  
+
+<p>O Observatório Nacional de Segurança Viária é uma instituição social sem fins lucrativos, dedicada a desenvolver ações que contribuam efetivamente para a redução dos elevados índices de ocorrências no trânsito brasileiro. Com esse objetivo, um grupo de profissionais multidisciplinares decidiu reunir todo o seu conhecimento, experiência e motivação em um único projeto grandioso e desafiador: mobilizar a sociedade em prol de um trânsito mais seguro.  
+
+
+# Como citar {-}  
+
+***   
+<p>ONSV; UFPR (2024). **MUDAR**. Observatório Nacional de Segurança Viária e Universidade Federal do Paraná. Disponível em: https://onsv.github.io/**MUDAR**/
+
+<br>  
+
+:::{layout-ncol="3"}
+
+:::{.center}
+
+![](img/onsv_logo_main.png){width="80%" fig-align="center"}
+
+:::
+
+:::{.right}
+
+![](img/marca_UFPR.png){width="60%" fig-align="center"}
+
+:::
+
+:::

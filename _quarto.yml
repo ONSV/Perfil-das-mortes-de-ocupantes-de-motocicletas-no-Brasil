@@ -9,7 +9,7 @@ language:
   section-title-appendices: "Apêndices"
 
 book:
-  title: "MUDAR" ####################################################################################
+  title: "Perfil das mortes de ocupantes de motocicletas no Brasil" 
   author:
   - name: Arthur Hideio Noguti
   - name: Dr. Jorge Tiago Bastos
@@ -20,6 +20,8 @@ book:
     - intro.qmd
     - metodologia.qmd
     - resultados.qmd
+    - conclusao.qmd
+    - ref.qmd
   twitter-card: true
   repo-url: https://github.com/ONSV/MUDAR #######################################################
   language: pt

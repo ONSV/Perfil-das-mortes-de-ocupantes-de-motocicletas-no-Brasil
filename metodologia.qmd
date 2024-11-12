@@ -11,10 +11,42 @@ p {
 
 <p>Inicialmente foram selecionadas variáveis a serem analisadas (contidas na biblioteca roadtrafficdeaths), levando em consideração o objetivo do estudo de identificar o perfil das vítimas fatais ocupantes de motocicletas no Brasil e a disponibilidade de dados de cada variável. As variáveis consideradas foram: 
 
-  - modal_vitima (modo de transporte da vítima); 
-  -faixa_etaria_vitima (faixa etária da vítima); 
-  -sexo_vitima (sexo da vítima); 
-  -escolaridade_vitima (nível de escolaridade da vítima); 
-  -raca_vitima (cor ou raça da vítima); 
-  -nome_regiao_res (região de residência da vítima); 
-  -estado_civil_vitima (estado civil da vítima); 
+- modal_vitima (modo de transporte da vítima); 
+- faixa_etaria_vitima (faixa etária da vítima); 
+- sexo_vitima (sexo da vítima); 
+- escolaridade_vitima (nível de escolaridade da vítima); 
+- raca_vitima (cor ou raça da vítima); 
+- nome_regiao_res (região de residência da vítima); 
+- estado_civil_vitima (estado civil da vítima); 
+
+<p> Então foi filtrado o modo de transporte da vítima, retirando casos com "pedestres", "bicicletas" e "outros", que resultou em uma base com 442.411 observações.. A análise considerou os óbitos em sinistros de trânsito ocorridos desde 1996.  
+
+<p>Na sequência, algumas variáveis tiveram suas categorias reclassificadas, a fim de obter um maior nível de agregação e facilitar a interpretação dos resultados. As faixas etárias foram recodificadas em grupos maiores e a raça preta e pardos foi unificada. O Quadro 1 a seguir apresenta o comparativo entre as categorias originais da base de dados e as categorias modificadas para a variável que representa a faixa etária da vítima e a raça.**REVISAR ESSA PARTE POIS NN UNIFIQUEI AS CATEGORIAS PRETO/PARDO**  
+
+
+<p style="font-size: 16px;text-align: center;">Quadro 1: Categorias modificadas </p>  
+|Variável|Categorias Originais|Categorias Modificas|
+| --- | --- | --- |
+|faixa_etaria_vitima| 0-4, 5-9, 10-14, 15-19, 20-24, 25-34, 35-44, 45-54, 55-64, 65+ |0-19, 20-34, 35-49, 50-64, 65+|
+|raca_vitima|Preta, Parda, Indígena, Amarela, Branca|Pretos/pardos, branca, indígena, amarela|  
+
+<p>Além disso, para a definição da variável resposta, foi criada uma variável binária denominada “ocupante_motocicleta” para indicar se a vítima era ocupante de uma motocicleta ou não com base na variável que especifica o modo de transporte da vítima. As demais variáveis foram consideradas como variáveis explicativas.  
+
+<p>As variáveis explicativas, todas categóricas, passaram por um processo de transformação em fatores, com as categorias de referência ajustadas para facilitar a interpretação dos resultados. A categoria de referência para cada variável pode ser visualizada no Quadro 2 a seguir. 
+
+<p style="font-size: 16px;text-align: center;">Quadro 2: Categorias de referência para cada variável explicativa </p> 
+|Variável|Categoria de Referência|
+| --- | --- |
+|faixa_etaria_vitima|MUDAR|
+|escolaridade_vitima|MUDAR|
+|raca_vitima|MUDAR|
+|nome_regiao_res|MUDAR|
+|sexo_vitima|MUDAR|
+|estado_civil_vitima|MUDAR|  
+
+<p>A modelagem estatística consistiu na obtenção de um modelo de Regressão Logística Binária capaz de fornecer a probabilidade de ocorrência da variável resposta (óbito de ocupante de motocicleta) a partir das variáveis explicativas consideradas: faixa_etaria_vitima, sexo_vitima, escolaridade_vitima, raca_vitima, nome_regiao_res e estado_civil_vitima. Para tal, utilizou-se a função `glm` do software R. Para avaliar a confiabilidade estatística das estimativas, foram obtidos os intervalos de confiança para cada um dos coeficientes do modelo, considerando um nível de confiança de 95%.   
+
+<p>Dos resultados do modelo foram obtidas as razões de chances (Odds Ratios - OR) e os p-valores correspondentes para cada uma das variáveis explicativas. Um OR acima de 1 indica um aumento na probabilidade de a vítima ser ocupante de motocicleta na presença da respectiva categoria (mantidas inalteradas as demais variáveis explicativas), enquanto um OR inferior a 1 indica uma diminuição dessa probabilidade (mantidas inalteradas as demais variáveis explicativas). Os p-valores menores que 0,05 indicam que a categoria da variável explicativa foi estatisticamente significativa para o modelo. 
+
+
+ 

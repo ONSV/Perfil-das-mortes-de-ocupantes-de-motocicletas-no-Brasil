@@ -19,6 +19,7 @@ book:
     - index.qmd
     - intro.qmd
     - metodologia.qmd
+    - resultados.qmd
   twitter-card: true
   repo-url: https://github.com/ONSV/MUDAR #######################################################
   language: pt

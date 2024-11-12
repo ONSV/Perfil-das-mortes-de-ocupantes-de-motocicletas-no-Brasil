@@ -89,6 +89,23 @@ summary(mod)
 
 odds <- exp(cbind(OR = coef(mod), confint.default(mod)))
 
+tab <- as.data.frame(odds)
+tab <- tab[-1,]
+tab <- tab %>% 
+  rename( "Limite Inferior" = "2.5 %",
+          "Limite Superior" = "97.5 %")
+tab <- tab %>% 
+  mutate( OR = round(OR, 2),
+          `Limite Inferior` = round(`Limite Inferior`, 2),
+          `Limite Superior` = round(`Limite Superior`, 2))
+tab$variavel <- c(rep("Faixa etária", 6), "Sexo", rep("Raça", 4), rep("Escolaridade", 4), rep("Região", 4), rep("Estado civil", 4))
+tab$categoria <- c("0-9","10-19","20-29","30-39","40-49","50-59","Masculino",
+                   "Amarela","Indígena","Parda","Preta","1 a 3 anos","4 a 7 anos",
+                   "8 a 11 anos","Nenhuma", "Centro-Oeste","Nordeste","Norte","Sudeste",
+                   "Separado","Solteiro","União","Viúvo")
+tab <- tab[,c(4,5,1,2,3)]
+rownames(tab) <- NULL
+
 # ex de interpretação: a chance do sexo masculino e de ser 
 #condutor de motocicleta é 2.054 vezes maior que o sexo feminino (que foi o de ref)
 
@@ -103,7 +120,7 @@ faixa_etaria$OR <- round(as.numeric(faixa_etaria$OR), 3)
 faixa_etaria$`2.5 %` <- round(as.numeric(faixa_etaria$`2.5 %`), 3)
 faixa_etaria$`97.5 %` <- round(as.numeric(faixa_etaria$`97.5 %`), 3)
 
-faixa_etaria %>% 
+gf <- faixa_etaria %>% 
   ggplot(aes(x = valor, y = OR))+
   geom_col(fill = "orange2")+
   geom_errorbar(aes(ymin = `2.5 %`, ymax = `97.5 %`), width = 0.6)+
@@ -121,7 +138,7 @@ sexo$OR <- round(as.numeric(sexo$OR), 3)
 sexo$`2.5 %` <- round(as.numeric(sexo$`2.5 %`), 3)
 sexo$`97.5 %` <- round(as.numeric(sexo$`97.5 %`), 3)
 
-sexo %>% 
+gs <- sexo %>% 
   ggplot(aes(x = valor, y = OR))+
   geom_col(fill = "orange2")+
   geom_errorbar(aes(ymin = `2.5 %`, ymax = `97.5 %`), width = 0.6)+
@@ -139,7 +156,7 @@ raca$OR <- round(as.numeric(raca$OR), 3)
 raca$`2.5 %` <- round(as.numeric(raca$`2.5 %`), 3)
 raca$`97.5 %` <- round(as.numeric(raca$`97.5 %`), 3)
 
-raca %>% 
+gr <- raca %>% 
   ggplot(aes(x = valor, y = OR))+
   geom_col(fill = "orange3")+
   geom_col(fill = "orange2")+
@@ -156,7 +173,7 @@ escola$OR <- round(as.numeric(escola$OR), 3)
 escola$`2.5 %` <- round(as.numeric(escola$`2.5 %`), 3)
 escola$`97.5 %` <- round(as.numeric(escola$`97.5 %`), 3)
 
-escola %>% 
+ge <- escola %>% 
   ggplot(aes(x = valor, y = OR))+
   geom_col(fill = "orange3")+
   geom_col(fill = "orange2")+
@@ -173,7 +190,7 @@ res$OR <- round(as.numeric(res$OR), 3)
 res$`2.5 %` <- round(as.numeric(res$`2.5 %`), 3)
 res$`97.5 %` <- round(as.numeric(res$`97.5 %`), 3)
 
-res %>% 
+gres <- res %>% 
   ggplot(aes(x = valor, y = OR))+
   geom_col(fill = "orange3")+
   geom_col(fill = "orange2")+
@@ -190,7 +207,7 @@ ec$OR <- round(as.numeric(ec$OR), 3)
 ec$`2.5 %` <- round(as.numeric(ec$`2.5 %`), 3)
 ec$`97.5 %` <- round(as.numeric(ec$`97.5 %`), 3)
 
-ec %>% 
+gec <- ec %>% 
   ggplot(aes(x = valor, y = OR))+
   geom_col(fill = "orange3")+
   geom_col(fill = "orange2")+

@@ -1,0 +1,31 @@
+<style>
+p {
+  text-align: justify;  
+  text-indent: 20px;   
+}
+</style> 
+
+# Resultados    
+
+<p>A Tabela 1 a seguir apresenta os resultados dos Odds Ratios e valores-p, e a interpretação dos dados foi realizada com base na razão de odds. Apenas os resultados significativos foram comentados. As categorias de referência para cada variável encontram-se indicadas na tabela. 
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE}
+source("Regressão log.R")
+```
+
+<p style="font-size: 16px;text-align: center;">Tabela 1: Resultados </p>  
+```{r, echo=FALSE}
+library(knitr)
+kable(tab)
+```
+
+```{r, echo=FALSE}
+gf
+gs
+gr
+ge
+gres
+gec
+```
+
+

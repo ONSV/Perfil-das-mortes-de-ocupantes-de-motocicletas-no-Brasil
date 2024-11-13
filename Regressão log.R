@@ -61,7 +61,7 @@ dados$nome_regiao_res <- as.factor(dados$nome_regiao_res)
 dados$nome_regiao_res <- relevel(dados$nome_regiao_res, ref = "Sul")
 
 dados$faixa_etaria_vitima <- as.factor(dados$faixa_etaria_vitima) 
-dados$faixa_etaria_vitima <- relevel(dados$faixa_etaria_vitima, ref = "60 ou mais")
+dados$faixa_etaria_vitima <- relevel(dados$faixa_etaria_vitima, ref = "60 ou mais") # 30-39
 
 dados$estado_civil_vitima <- as.factor(dados$estado_civil_vitima) 
 dados$estado_civil_vitima <- relevel(dados$estado_civil_vitima, ref = "casado")

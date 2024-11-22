@@ -200,7 +200,7 @@ p {
 <p>
 </p><p>Então foi filtrado o modo de transporte da vítima, retirando casos com “pedestres”, “bicicletas” e “outros”, que resultou em uma base com 442.411 observações.. A análise considerou os óbitos em sinistros de trânsito ocorridos desde 1996.</p>
 <p>
-</p><p>Na sequência, algumas variáveis tiveram suas categorias reclassificadas, a fim de obter um maior nível de agregação e facilitar a interpretação dos resultados. As faixas etárias foram recodificadas em grupos maiores e a raça preta e pardos foi unificada. O Quadro 1 a seguir apresenta o comparativo entre as categorias originais da base de dados e as categorias modificadas para a variável que representa a faixa etária da vítima e a raça.<strong>REVISAR ESSA PARTE POIS NN UNIFIQUEI AS CATEGORIAS PRETO/PARDO</strong></p>
+</p><p>Na sequência, as faixas etárias foram recodificadas em grupos maiores, a fim de obter um maior nível de agregação e facilitar a interpretação dos resultados. O Quadro 1 a seguir apresenta o comparativo entre as categorias originais da base de dados e as categorias modificadas para a variável faixa etária da vítima.</p>
 <p style="font-size: 16px;text-align: center;">
 Quadro 1: Categorias modificadas
 </p>
@@ -220,13 +220,8 @@ Quadro 1: Categorias modificadas
 <tbody>
 <tr class="odd">
 <td>faixa_etaria_vitima</td>
-<td>0-4, 5-9, 10-14, 15-19, 20-24, 25-34, 35-44, 45-54, 55-64, 65+</td>
-<td>0-19, 20-34, 35-49, 50-64, 65+</td>
-</tr>
-<tr class="even">
-<td>raca_vitima</td>
-<td>Preta, Parda, Indígena, Amarela, Branca</td>
-<td>Pretos/pardos, branca, indígena, amarela</td>
+<td>0 a 4 anos, 5 a 9 anos, 10 a 14 anos, 15 a 19 anos, 20 a 24 anos, 25 a 29 anos, 30 a 34 anos, 35 a 39 anos, 40 a 44 anos, 45 a 49 anos, 50 a 54 anos, 55 a 59 anos, 60 a 64 anos, 65 a 69 anos, 70 a 74 anos, 75 a 79 anos, Mais de 80 anos</td>
+<td>0-9, 10-19, 20-29, 30-39, 40-49, 50-59, 60 ou mais</td>
 </tr>
 </tbody>
 </table>
@@ -247,27 +242,31 @@ Quadro 2: Categorias de referência para cada variável explicativa
 <tbody>
 <tr class="odd">
 <td>faixa_etaria_vitima</td>
-<td>MUDAR</td>
+<td>30-39</td>
 </tr>
 <tr class="even">
 <td>escolaridade_vitima</td>
-<td>MUDAR</td>
+<td>12 anos ou mais</td>
 </tr>
 <tr class="odd">
 <td>raca_vitima</td>
-<td>MUDAR</td>
+<td>Branca</td>
 </tr>
 <tr class="even">
 <td>nome_regiao_res</td>
-<td>MUDAR</td>
+<td>Sul</td>
 </tr>
 <tr class="odd">
 <td>sexo_vitima</td>
-<td>MUDAR</td>
+<td>Feminino</td>
 </tr>
 <tr class="even">
 <td>estado_civil_vitima</td>
-<td>MUDAR</td>
+<td>casado</td>
+</tr>
+<tr class="odd">
+<td>ocupante_motocicleta</td>
+<td>nao_ocupante</td>
 </tr>
 </tbody>
 </table>

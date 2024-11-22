@@ -61,7 +61,7 @@ dados$nome_regiao_res <- as.factor(dados$nome_regiao_res)
 dados$nome_regiao_res <- relevel(dados$nome_regiao_res, ref = "Sul")
 
 dados$faixa_etaria_vitima <- as.factor(dados$faixa_etaria_vitima) 
-dados$faixa_etaria_vitima <- relevel(dados$faixa_etaria_vitima, ref = "60 ou mais") # 30-39
+dados$faixa_etaria_vitima <- relevel(dados$faixa_etaria_vitima, ref = "30-39") # 30-39
 
 dados$estado_civil_vitima <- as.factor(dados$estado_civil_vitima) 
 dados$estado_civil_vitima <- relevel(dados$estado_civil_vitima, ref = "casado")
@@ -99,7 +99,7 @@ tab <- tab %>%
           `Limite Inferior` = round(`Limite Inferior`, 2),
           `Limite Superior` = round(`Limite Superior`, 2))
 tab$variavel <- c(rep("Faixa etária", 6), "Sexo", rep("Raça", 4), rep("Escolaridade", 4), rep("Região", 4), rep("Estado civil", 4))
-tab$categoria <- c("0-9","10-19","20-29","30-39","40-49","50-59","Masculino",
+tab$categoria <- c("0-9","10-19","20-29","40-49","50-59","60 ou mais","Masculino",
                    "Amarela","Indígena","Parda","Preta","1 a 3 anos","4 a 7 anos",
                    "8 a 11 anos","Nenhuma", "Centro-Oeste","Nordeste","Norte","Sudeste",
                    "Separado","Solteiro","União","Viúvo")
@@ -113,8 +113,8 @@ rownames(tab) <- NULL
 faixa_etaria <- as.data.frame(odds[c(2:7),])
 
 faixa_etaria[7,] <- c("1","1","1")
-faixa_etaria$valor <-  c("0-9", "10-19", "20-29", "30-39", "40-49", "50-59", "Acima 60")
-faixa_etaria$valor <- relevel(as.factor(faixa_etaria$valor), ref = "Acima 60")
+faixa_etaria$valor <-  c("0-9", "10-19", "20-29", "40-49", "50-59", "60 ou mais", "30-39")
+faixa_etaria$valor <- relevel(as.factor(faixa_etaria$valor), ref = "30-39")
 
 faixa_etaria$OR <- round(as.numeric(faixa_etaria$OR), 3)
 faixa_etaria$`2.5 %` <- round(as.numeric(faixa_etaria$`2.5 %`), 3)

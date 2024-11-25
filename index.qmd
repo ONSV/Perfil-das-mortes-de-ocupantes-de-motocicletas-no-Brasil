@@ -15,6 +15,11 @@ p {
 
 ***  
 
+- A faixa etária entre 20 e 29 possui uma maior chance de ocorrência em comparação com a faixa 30 a 39; 
+- O sexo masculino possui duas vezes mais chance de ocorrer que o feminino;  
+- A raça indígena possui 1,25 vezes mais chance que a branca, enquanto que a "amarela" é 0,72 vezes mais, ou seja, menor a chance; 
+- A ausência de escolaridade aumenta 1,92 vezes a chance de ser vítima fatal de motocicleta comparado com "12 anos ou mais"; - A região Norte é 2,52 vezes maior a chance que no Sul; 
+- A categoria "União" tem 1,57 vezes maior a chance que comparado com "Casado".
 
 
 # Sobre o Observatório {-}   

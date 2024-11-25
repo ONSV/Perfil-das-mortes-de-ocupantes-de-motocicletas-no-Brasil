@@ -5,7 +5,7 @@ p {
 }
 </style> 
 
-# Metodologia  
+# Metodologia  {#sec:metodologia}
 
 <p>A metodologia da análise foi conduzida utilizando o software R e as bibliotecas necessárias para o carregamento e manipulação dos dados, modelagem estatística e visualização dos resultados. Foram utilizadas as seguintes bibliotecas: dplyr, psych, car, MASS, DescTools, QuantPsyc, ggplot2, onsvplot e roadtrafficdeaths(base de dados de mortalidade no trânsito do Ministério da Saúde).
 
@@ -32,9 +32,9 @@ p {
 
 <p>Além disso, para a definição da variável resposta, foi criada uma variável binária denominada “ocupante_motocicleta” para indicar se a vítima era ocupante de uma motocicleta ou não com base na variável que especifica o modo de transporte da vítima. As demais variáveis foram consideradas como variáveis explicativas.  
 
-<p>As variáveis explicativas, todas categóricas, passaram por um processo de transformação em fatores, com as categorias de referência ajustadas para facilitar a interpretação dos resultados. A categoria de referência para cada variável pode ser visualizada no Quadro 2 a seguir. 
+<p>As variáveis explicativas, todas categóricas, passaram por um processo de transformação em fatores, com as categorias de referência ajustadas para facilitar a interpretação dos resultados. A categoria de referência para cada variável pode ser visualizada no Quadro 2 a seguir.  
 
-<p style="font-size: 16px;text-align: center;">Quadro 2: Categorias de referência para cada variável explicativa </p> 
+<p style="font-size: 16px;text-align: center;">Quadro 2: Categorias de referência para cada variável explicativa </p>  
 |Variável|Categoria de Referência|
 | --- | --- |
 |faixa_etaria_vitima|30-39|

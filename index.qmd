@@ -32,7 +32,7 @@ p {
 # Como citar {-}  
 
 ***   
-<p>ONSV; UFPR (2024). Perfil das mortes de ocupantes de motocicletas no Brasil. Observatório Nacional de Segurança Viária e Universidade Federal do Paraná. Disponível em: https://onsv.github.io/**MUDAR**/
+<p>ONSV; UFPR (2024). Perfil das mortes de ocupantes de motocicletas no Brasil. Observatório Nacional de Segurança Viária e Universidade Federal do Paraná. Disponível em: https://onsv.github.io/Perfil-das-mortes-de-ocupantes-de-motocicletas-no-Brasil/
 
 <br>  
 

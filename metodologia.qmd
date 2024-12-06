@@ -9,7 +9,7 @@ p {
 
 <p>A metodologia da análise foi conduzida utilizando o software R e as bibliotecas necessárias para o carregamento e manipulação dos dados, modelagem estatística e visualização dos resultados. Foram utilizadas as seguintes bibliotecas: dplyr, psych, car, MASS, DescTools, QuantPsyc, ggplot2, onsvplot e roadtrafficdeaths(base de dados de mortalidade no trânsito do Ministério da Saúde).
 
-<p>Inicialmente foram selecionadas variáveis a serem analisadas (contidas na biblioteca roadtrafficdeaths), levando em consideração o objetivo do estudo de identificar o perfil das vítimas fatais ocupantes de motocicletas no Brasil e a disponibilidade de dados de cada variável. As variáveis consideradas foram: 
+<p>Inicialmente foram selecionadas as variáveis a serem analisadas (contidas na biblioteca roadtrafficdeaths), levando em consideração o objetivo do estudo de identificar o perfil das vítimas fatais ocupantes de motocicletas no Brasil e a disponibilidade de dados de cada variável. As variáveis consideradas foram: 
 
 - modal_vitima (modo de transporte da vítima); 
 - faixa_etaria_vitima (faixa etária da vítima); 
@@ -19,7 +19,7 @@ p {
 - nome_regiao_res (região de residência da vítima); 
 - estado_civil_vitima (estado civil da vítima); 
 
-<p> Então foi filtrado o modo de transporte da vítima, retirando casos com "pedestres", "bicicletas" e "outros", que resultou em uma base com 442.411 observações.. A análise considerou os óbitos em sinistros de trânsito ocorridos desde 1996.  
+<p> Em relação ao modo de transporte da vítima, foram excluídas as mortes de "pedestres", "bicicletas" e "outros", que resultou em uma base com 442.411 observações. No caso dos pedestres e ciclistas, a exclusão justifica-se por serem modos mais vulneráveis que os motociclistas. Já a exclusão da categoria outros está relacionada à imprecisão desses registros.  A análise considerou os óbitos em sinistros de trânsito ocorridos desde 1996.  
 
 <p>Na sequência, as faixas etárias foram recodificadas em grupos maiores, a fim de obter um maior nível de agregação e facilitar a interpretação dos resultados. O Quadro 1 a seguir apresenta o comparativo entre as categorias originais da base de dados e as categorias modificadas para a variável faixa etária da vítima. 
 

@@ -14,13 +14,13 @@ source("Regressão log.R")
 ```
 
 <p style="font-size: 16px;text-align: center;">Tabela 1: Resultados </p>  
-```{r, echo=FALSE}
+```{r, echo=FALSE, warning=FALSE}
 library(knitr)
 kable(tab)
 ```
 <p style="font-size: 16px;">Fonte: Os autores (2024)</p>  
 
-<p>Para facilitar a interpretação, foram feitos gráficos de barras que visam demonstrar a diferença entre os valores de *Odds Ratio*, onde a primeira barra representa a categoria de referência, ou seja, ela sempre irá valer 1 e as marcações no topo das barras são os intervalos de confiaça gerados.  Na @fig-1 é possível verificar que a categoria "0-9" possui um valor pra Razão de ODDS bem inferior ao de referência, sendo uma razão de 0,08; isso significa que a categoria com faixa etária 0 a 9 anos tem 0,08 vezes mais chances de ser vítima de um sinistro fatal ocupando motocicleta que a faixa etária 30 a 39 anos (como está multiplicando por um número menor que 1, representa que a chance é inferior). Já a faixa etária 20 a 29 anos possui 1,28 vezes mais chance do que a categoria de referência. 
+<p>Para facilitar a interpretação, foram feitos gráficos de barras que visam demonstrar a diferença entre os valores da *Odds Ratio*, de modo que a primeira barra representa a categoria de referência, correspondendo ao valor 1. As marcações no topo das barras indicam os intervalos de confiaça gerados.  Na @fig-1 é possível verificar que a categoria "0-9" possui um valor pra Razão de ODDS bem inferior ao da categoria de referência, sendo uma razão de 0,08; isso significa que uma vítima fatal de sinistro de trânsito na faixa etária de 0 a 9 anos tem 92% (1-0,08) menos chances de ser vítima fatal ocupante de motocicleta. Já vítimas fatais de sinis que a faixa etária 30 a 39 anos (como está multiplicando por um número menor que 1, representa que a chance é inferior). Já uma vítima fatal de sinistro de trânsito na faixa etária de 20  a 29 anos, apresenta uma chance 28% maior de ser ser vítima fatal ocupante de motocicleta.  
 
 ```{r, echo=FALSE}
 #| label: fig-1
@@ -29,7 +29,7 @@ gf
 ```
 <p style="font-size: 16px;">Fonte: Os autores (2024)</p>  
 
-<p>Para a variável "sexo", a categoria "Masculino" apresentou uma chance 2,05 vezes maior de ser uma vitima fatal ocupante de motocicleta que a categoria "Feminino", como é demonstrado na @fig-2.
+<p>Para a variável "sexo", a categoria "Masculino" apresentou uma chance 2,05 vezes maior de ser uma vitima fatal ocupante de motocicleta em relação a categoria "Feminino", como é demonstrado na @fig-2.
 
 ```{r, echo=FALSE}
 #| label: fig-2
@@ -38,7 +38,7 @@ gs
 ```
 <p style="font-size: 16px;">Fonte: Os autores (2024)</p>  
 
-<p>Na variável "raça" houve uma diferença entre os valores de *Odds Ratio* menor, mostrando que em comparação com as outras variáveis selecionadas, esta possui menor relevância para verificar o perfil das mortes de ocupantes de motocicletas. Na @fig-3 é possível verificar que a raça "Indígena" possui uma chance de 1,25 vezes maior que a raça "branca" de ser uma vítima fatal ocupando motocicleta, enquanto a raça "amarela" apresentou um valor de 0,72 vezes maior que a raça de referência, ou seja, possui uma menor chance de ocorrência.
+<p>Para a variável "raça, índígenas, pretos e pardos apresentaram maiores chances de serem vítimas fatais de sinistro de trânsito ocupantes de motocicleta, respectivamente 25%, 18% e 16% maiores em relação às vítimas fatais brancas. A raça "amarela" apresentou uma chance 28% menor de ser vítima fatal ocupante de motocicleta. 
 ```{r, echo=FALSE}
 #| label: fig-3
 #| fig-cap: Razão de ODDS para variável "raça".
@@ -46,7 +46,7 @@ gr
 ```
 <p style="font-size: 16px;">Fonte: Os autores (2024)</p>  
 
-<p>Como para a variável "escolaridade" a categoria de referência foi a com o maior nível (12 anos ou mais), todas as outras categorias apresentaram valores superior a 1, ou seja, maiores chances de ocorrência. A categoria "Nenhuma" foi a que apresentou o maior valor, sendo 1,92 vezes maior a chance de serem vítimas fatais ocupantes de motocicleta que pessoas com escolaridade relativo a 12 anos ou mais. A @fig-4 apresenta os valores para todas as variáveis.    
+<p>Como para a variável "escolaridade" a categoria de referência foi a com o maior nível (12 anos ou mais), todas as outras categorias apresentaram valores superior a 1, ou seja, maiores chances de serem vítimas fatais ocupantes de motocicleta. A categoria "Nenhuma" foi a que apresentou o maior valor, sendo a chance 92% maior que para pessoas com escolaridade relativo a 12 anos ou mais. A @fig-4 apresenta os valores para todas as variáveis.    
 ```{r, echo=FALSE}
 #| label: fig-4
 #| fig-cap: Razão de ODDS para variável "escolaridade".
@@ -54,7 +54,7 @@ ge
 ```
 <p style="font-size: 16px;">Fonte: Os autores (2024)</p>  
 
-<p>Na @fig-5 é apresentado a razão de ODDS para a variável "região de residência". A região "Norte" possui 2,52 vezes maior a chance de serem vítimas fatais ocupantes de motocicleta que a região de residência "Sul". Já a região "Sudeste" apenas 1,19 vezes maior a chance de ocorrência que a categoria de referência, demonstrando que não há uma diferença grande entre tais regiões.  
+<p>Na @fig-5 é apresentado a razão de ODDS para a variável "região de residência". Vítimas fatais de sinistros de trânsito residentes na região "Norte" apresentaram 2,52 vezes mais a chances de serem vítimas fatais ocupantes de motocicleta que a região de residência "Sul". Já na região "Sudeste", a chance é 19% maior que na região Sul.  
 ```{r, echo=FALSE}
 #| label: fig-5
 #| fig-cap: Razão de ODDS para variável "região de residência".
@@ -62,7 +62,7 @@ gres
 ```
 <p style="font-size: 16px;">Fonte: Os autores (2024)</p>  
 
-<p>Para a variável "estado civil" (@fig-6), apenas a categoria "viúvo" apresentou uma menor chance que a categoria de referência (0,95 vezes maior a chance). Enquanto a categoria "União" teve 1,57 vezes maior a chance de ser vítima fatal ocupante de motocicleta comparado com a categoria "casado". 
+<p>Para a variável "estado civil" (@fig-6), apenas a categoria "viúvo" apresentou uma menor chance que a categoria de referência (5% menor). Enquanto a categoria "União" resultou com uma chance 57% maior de ser vítima fatal ocupante de motocicleta comparado com a categoria "casado". 
 ```{r, echo=FALSE}
 #| label: fig-6
 #| fig-cap: Razão de ODDS para variável "estado civil".
